@@ -60,7 +60,7 @@ BEDPOST
 Group Level
 -------------------
 
-At the Group Level analysis, prepdwi reads all the processed data in participant level and creates a qulaity report for each subject showing how good the registrations are. You can't run group level for a single subject. Once the group level analysis is completed, you will see a new folder inside the "derrivatives" directory called "reports". There you will see a list of html files for each subject which shows the qulaity of the registration at each process. The failed registrations can be identified if the red contour plots are not overlapping with the template image. For the registration failed cases, you can re-run prepdwi participant level using -reg_init flag.
+At the Group Level analysis, prepdwi reads all the processed data in participant level and creates a qulaity report for each subject showing how good the registrations are. You can't run group level for a single subject. Once the group level analysis is completed, you will see a new folder inside the "derrivatives" directory called "reports". There you will see a list of html files for each subject which shows the qulaity of the registration at each process. The failed registrations can be identified if the red contour plots are not overlapping with the template image. For the registration failed cases, you can re-run prepdwi participant level using --reg_init_participant flag.
 
 To use the --reg_init_participant flag, you have to pick a subject which has a successful good registration. Then Prepwi will use that as the initial image to register the images of the subjects you want.
 
@@ -80,23 +80,7 @@ Here the subject ID should be as same as in the work folder. Not as in the bids 
 Participant2 Level
 --------------------
 
-You will want to use the :option:`-i` flag,
-which while ignore URLs matching the passed regex::
-
-        crawler -i "^blog/" <url>
-
-This will only crawl pages that contain your blog URL.
-
-
-        Only crawl certain pages
-        ------------------------
-
-        You will want to use the :option:`-i` flag,
-        which while ignore URLs matching the passed regex::
-
-                crawler -i "pdf$" <url>
-
-        This will ignore URLs that end in PDF.
+Runs probtrackx network connectivity between all regions in a given atlas labels file. Uses either canned atlases with the --atlas option, where predefined atlases are defined in the cfg folder;  or can specify a new atlas with the --atlas_* options
 
 
 .. index::

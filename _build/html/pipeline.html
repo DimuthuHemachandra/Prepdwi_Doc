@@ -93,7 +93,7 @@
 </div>
 <div class="section" id="group-level">
 <h2>Group Level<a class="headerlink" href="#group-level" title="Permalink to this headline">¶</a></h2>
-<p>At the Group Level analysis, prepdwi reads all the processed data in participant level and creates a qulaity report for each subject showing how good the registrations are. You can’t run group level for a single subject. Once the group level analysis is completed, you will see a new folder inside the “derrivatives” directory called “reports”. There you will see a list of html files for each subject which shows the qulaity of the registration at each process. The failed registrations can be identified if the red contour plots are not overlapping with the template image. For the registration failed cases, you can re-run prepdwi participant level using -reg_init flag.</p>
+<p>At the Group Level analysis, prepdwi reads all the processed data in participant level and creates a qulaity report for each subject showing how good the registrations are. You can’t run group level for a single subject. Once the group level analysis is completed, you will see a new folder inside the “derrivatives” directory called “reports”. There you will see a list of html files for each subject which shows the qulaity of the registration at each process. The failed registrations can be identified if the red contour plots are not overlapping with the template image. For the registration failed cases, you can re-run prepdwi participant level using –reg_init_participant flag.</p>
 <p>To use the –reg_init_participant flag, you have to pick a subject which has a successful good registration. Then Prepwi will use that as the initial image to register the images of the subjects you want.</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>singularity run home/singularity/prepdwi_7g home/project/bids home/project/derrivatives participant --reg_init_participant &lt;subj-ID&gt;
 </pre></div>
@@ -106,20 +106,7 @@
 </div>
 <div class="section" id="participant2-level">
 <h2>Participant2 Level<a class="headerlink" href="#participant2-level" title="Permalink to this headline">¶</a></h2>
-<p>You will want to use the <code class="xref std std-option docutils literal"><span class="pre">-i</span></code> flag,
-which while ignore URLs matching the passed regex:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">crawler</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;^blog/&quot;</span> <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>This will only crawl pages that contain your blog URL.</p>
-<blockquote>
-<div><p>You will want to use the <code class="xref std std-option docutils literal"><span class="pre">-i</span></code> flag,
-which while ignore URLs matching the passed regex:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">crawler</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;pdf$&quot;</span> <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>This will ignore URLs that end in PDF.</p>
-</div></blockquote>
+<p>Runs probtrackx network connectivity between all regions in a given atlas labels file. Uses either canned atlases with the –atlas option, where predefined atlases are defined in the cfg folder;  or can specify a new atlas with the –atlas_* options</p>
 <span class="target" id="index-0"></span></div>
 </div>
 
@@ -148,6 +135,7 @@ which while ignore URLs matching the passed regex:</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing Prepdwi</a></li>
 </ul>
 
 <div class="relations">

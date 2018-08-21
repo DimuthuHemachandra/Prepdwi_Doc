@@ -80,23 +80,7 @@ Here the subject ID should be as same as in the work folder. Not as in the bids 
 Participant2 Level
 --------------------
 
-You will want to use the :option:`-i` flag,
-which while ignore URLs matching the passed regex::
-
-        crawler -i "^blog/" <url>
-
-This will only crawl pages that contain your blog URL.
-
-
-        Only crawl certain pages
-        ------------------------
-
-        You will want to use the :option:`-i` flag,
-        which while ignore URLs matching the passed regex::
-
-                crawler -i "pdf$" <url>
-
-        This will ignore URLs that end in PDF.
+Runs probtrackx network connectivity between all regions in a given atlas labels file. Uses either canned atlases with the --atlas option, where predefined atlases are defined in the cfg folder;  or can specify a new atlas with the --atlas_* options
 
 
 .. index::

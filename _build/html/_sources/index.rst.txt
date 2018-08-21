@@ -14,6 +14,7 @@ Prepdwi is a pipeline developped by the Khan Lab to pre-process Diffusion MRI da
    installation
    pipeline
    support
+   citing
 
 
 
